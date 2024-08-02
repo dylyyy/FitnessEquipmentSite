@@ -10,7 +10,7 @@ const connection = mysql.createConnection({
   //database: 'c237_fitnessequipmentapp'
   host: 'db4free.net',
   user: 'dylan23020421',
-  password: '23020421',
+  password: 't0620783e',
   database: 'fitnessequipment'
 });
 
