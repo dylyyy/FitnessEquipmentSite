@@ -11,7 +11,7 @@ const connection = mysql.createConnection({
   host: 'db4free.net',
   user: 'dylan23020421',
   password: '23020421',
-  database: 'fitnessequipment.net'
+  database: 'fitnessequipment'
 });
 
 const storage = multer.diskStorage({
