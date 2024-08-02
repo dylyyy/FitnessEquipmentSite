@@ -8,10 +8,10 @@ const connection = mysql.createConnection({
   //user: 'root',
   //password: '',
   //database: 'c237_fitnessequipmentapp'
-  host: 'db4free.net',
-  user: 'dylan23020421.net',
-  password: '23020421.net',
-  database: "fitnessequipment.net"
+  host: 'db4free',
+  user: 'dylan23020421',
+  password: '23020421',
+  database: "fitnessequipment"
 });
 
 const storage = multer.diskStorage({
