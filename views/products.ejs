@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Equipment App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <%- include('partials/navbar') %>
+    
+    <div class="container mt-4">
+        <div class="text-center">
+            <h2>Product Details</h2>
+        </div>
+        <div class="mt-4">
+            <% if (products) { %>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><b>Product Category:</b><br> <%= products.categoryName %></p>
+                        <p><b>Product Price:</b><br> <%= products.productPrice %></p>
+                        <p><b>Quantity:</b><br> <%= products.quantity %></p>
+                        <p><b>Brand:</b><br> <%= products.productBrand %></p>
+                    </div>
+                    <div class="col-md-6">
+                        <p><b>Product Image:</b><br> 
+                            <img src="/images/<%= products.productImage %>" class="img-fluid" alt="Product Image">
+                        </p>
+                    </div>
+                </div>
+            <% } else { %>
+                <p>No product found.</p>
+            <% } %>
+            <a href="/" class="btn btn-secondary mt-3">Back</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
