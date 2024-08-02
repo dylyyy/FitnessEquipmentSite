@@ -8,7 +8,7 @@ const connection = mysql.createConnection({
   //user: 'root',
   //password: '',
   //database: 'c237_fitnessequipmentapp'
-  host: 'db4free',
+  host: 'db4free.net',
   user: 'dylan23020421',
   password: '23020421',
   database: "fitnessequipment"
